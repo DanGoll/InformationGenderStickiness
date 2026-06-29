@@ -1,0 +1,21 @@
+\begin{table}[htbp]\centering
+\caption{Ex-ante minimum detectable effects (MDEs) for key parameters (\texttt{invest\_ref})}
+\label{tab:mde_exante_keyparams}
+\begin{threeparttable}
+\begin{tabular}{lr}
+\toprule
+Parameter (pooled spec) & MDE (ECU) \\\\
+\midrule
+Positive Information (\texttt{pos\_info}) & 54.65 \\\\
+Negative Information (\texttt{neg\_info}) & 62.77 \\\\
+Positive Information $\times$ Female & 85.59 \\\\
+Negative Information $\times$ Female & 85.14 \\\\
+Positiveness (\texttt{positiveness}) & 30.21 \\\\
+Positiveness $\times$ Female & 44.08 \\\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item Notes: Ex-ante MDEs are computed as =K\cdot\sigma\cdot SE_{\text{design}}$ with two-sided $\alpha=0.10$ and power $=0.80$ (so \approx 2.486$). $\sigma$ is the SD of \texttt{invest\_ref} in the pooled No-Info group (here: 84.94). {\text{design}}$ uses realized cell sizes (for \texttt{pos\_info}/\texttt{neg\_info}: treatment vs.\ No-Info within the baseline group; for interactions: the corresponding difference-in-differences across male/female cells; for \texttt{positiveness}: OLS slope precision based on {xx}$ within gender).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

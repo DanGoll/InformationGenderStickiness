@@ -1,0 +1,37 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Linear regression on stay with the reference}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                    &\multicolumn{4}{c}{Stay with reference difficulty}                                     \\\cmidrule(lr){2-5}
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+\midrule
+Positive Information&      -0.003         &      -0.004         &                     &                     \\
+                    &     (0.003)         &     (0.005)         &                     &                     \\
+\addlinespace
+Positive Information x Female&                     &       0.003         &                     &                     \\
+                    &                     &     (0.006)         &                     &                     \\
+\addlinespace
+Negative Information&       0.004         &       0.008\sym{**} &                     &                     \\
+                    &     (0.003)         &     (0.004)         &                     &                     \\
+\addlinespace
+Negative Information x Female&                     &      -0.010\sym{*}  &                     &                     \\
+                    &                     &     (0.005)         &                     &                     \\
+\addlinespace
+Positiveness        &                     &                     &      -0.003\sym{*}  &      -0.006\sym{**} \\
+                    &                     &                     &     (0.002)         &     (0.003)         \\
+\addlinespace
+Positiveness x Female&                     &                     &                     &       0.006\sym{*}  \\
+                    &                     &                     &                     &     (0.003)         \\
+\addlinespace
+Female              &       0.017\sym{***}&       0.019\sym{***}&       0.017\sym{***}&       0.018\sym{***}\\
+                    &     (0.001)         &     (0.002)         &     (0.000)         &     (0.000)         \\
+\midrule
+N                   &       9,077         &       9,077         &       9,077         &       9,077         \\
+\(R^2\_{adj}\)       &      0.1628         &      0.1631         &      0.1628         &      0.1630         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Notes: *, **, and *** denote statistical significance at the 10\%, 5\%, and 1\% levels, respectively.}\\
+\multicolumn{5}{l}{\footnotesize Individual fixed effects are included. Standard errors clustered at the athlete level are in parentheses.}\\
+\end{tabular}
+\end{table}

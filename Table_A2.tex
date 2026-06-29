@@ -1,0 +1,25 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Momentum vs. regression-to-the-mean}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                    &\multicolumn{2}{c}{Difference Performance} &\multicolumn{2}{c}{Difference Score}       \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+\midrule
+Positive Information&      -0.489\sym{***}&                     &      -0.909\sym{***}&                     \\
+                    &     (0.032)         &                     &     (0.274)         &                     \\
+\addlinespace
+Negative Information&       1.072\sym{***}&                     &       2.119\sym{***}&                     \\
+                    &     (0.036)         &                     &     (0.300)         &                     \\
+\addlinespace
+Positiveness        &                     &      -0.763\sym{***}&                     &      -1.480\sym{***}\\
+                    &                     &     (0.020)         &                     &     (0.165)         \\
+\midrule
+N                   &       9,077         &       9,077         &       9,077         &       9,077         \\
+\(R^2\_{adj}\)       &      0.2387         &      0.2252         &      0.3343         &      0.3337         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Notes: *, **, and *** denote statistical significance at the 10\%, 5\%, and 1\% levels, respectively.}\\
+\multicolumn{5}{l}{\footnotesize Linear regressions using diving data. Individual fixed effects are included. Standard errors clustered at the athlete level are in parentheses.}\\
+\end{tabular}
+\end{table}

@@ -1,0 +1,22 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Changing away from the reference difficulty on performance}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                    &\multicolumn{2}{c}{Difference Performance} &\multicolumn{2}{c}{Difference Score}       \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+\midrule
+Change away from reference&      -0.711\sym{***}&      -0.643\sym{***}&      -1.957         &      -3.263\sym{**} \\
+                    &     (0.188)         &     (0.180)         &     (1.266)         &     (1.361)         \\
+\addlinespace
+Subsequent difficulty&                     &      -0.347\sym{***}&                     &       6.681\sym{***}\\
+                    &                     &     (0.063)         &                     &     (0.676)         \\
+\midrule
+N                   &       9,077         &       9,077         &       9,077         &       9,077         \\
+\(R^2\_{adj}\)       &      0.0246         &      0.0276         &      0.3267         &      0.3380         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Notes: *, **, and *** denote statistical significance at the 10\%, 5\%, and 1\% levels, respectively.}\\
+\multicolumn{5}{l}{\footnotesize Linear regressions using diving data. Individual fixed effects are included. Standard errors clustered at the athlete level are in parentheses.}\\
+\end{tabular}
+\end{table}
