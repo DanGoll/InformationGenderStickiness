@@ -10,7 +10,7 @@ The package contains 2 .xlsx files that contain the raw data for Study 1 and Stu
 - Diving.xlsx (Study 1)
 - data_experiment.xlsx (Study 2)
 
-moreover there are 5 .do files (STATA format) that replicate all the tables and figures:
+In the .do files one needs to change the working direction to the path of the folder "Replication" that contains the "data"-folder. Tables and Figures are stored in the working direction as jpeg/pdf/tex files. There are 5 .do files (STATA format) that replicate all the tables and figures:
 
 edit_diving.do
 - includes all the data preparation steps from the raw data (Diving.xlsx) to the data used for the regression (diving.dta)
@@ -32,6 +32,8 @@ reg_experiment.do
 balancing_experiment.do
 - replicates the Table B.1 “Balance table, demographics across experimental conditions”
 - replicates the minimum detectable effects (MDEs) that are reported in Footnote 3.
+
+
 
 
 VARIABLE DEFINITIONS

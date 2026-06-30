@@ -164,7 +164,7 @@ esttab rel_3_ac rel_3_bc rel_3_apc rel_3_bpc ///
     nonotes ///
     addnotes( ///
         "Notes: *, **, and *** denote statistical significance at the 10\%, 5\%, and 1\% levels, respectively." ///
-        "Individual fixed effects are included. Standard errors clustered at the athlete level are in parentheses." ///
+        "Individual fixed effects are included. Robust standard errors (in parentheses)." ///
     )
 
 
@@ -265,14 +265,14 @@ esttab rel_4x_bi rel_4x_ci rel_4x_d rel_4x_e ///
     b(3) ///
     se(3) ///
     star(* 0.10 ** 0.05 *** 0.01) ///
-    stats(N r2_a, ///
+    stats(N r2, ///
         labels("N" "\(R^2_{adj}\)") ///
         fmt(%9.0fc %9.4f)) ///
     title("Momentum vs. regression-to-the-mean") ///
     nonotes ///
     addnotes( ///
         "Notes: *, **, and *** denote statistical significance at the 10\%, 5\%, and 1\% levels, respectively." ///
-        "Linear regressions using diving data. Individual fixed effects are included. Standard errors clustered at the athlete level are in parentheses." ///
+        "Linear regressions using diving data. Individual fixed effects are included. Robust standard errors (in parentheses)." ///
     )
 
 
@@ -320,7 +320,7 @@ esttab ch_ref_0 ch_ref_1 ch_ref_s0 ch_ref_s1, ///
     b(3) ///
     se(3) ///
     star(* 0.10 ** 0.05 *** 0.01) ///
-    stats(N r2_a, ///
+    stats(N r2, ///
         labels("N" "Adjusted R-squared") ///
         fmt(%9.0fc %9.4f)) ///
     title("Table A.3: Changing away from the reference difficulty on performance") ///
@@ -354,14 +354,14 @@ esttab ch_ref_0 ch_ref_1 ch_ref_s0 ch_ref_s1 ///
     b(3) ///
     se(3) ///
     star(* 0.10 ** 0.05 *** 0.01) ///
-    stats(N r2_a, ///
+    stats(N r2, ///
         labels("N" "\(R^2_{adj}\)") ///
         fmt(%9.0fc %9.4f)) ///
     title("Changing away from the reference difficulty on performance") ///
     nonotes ///
     addnotes( ///
         "Notes: *, **, and *** denote statistical significance at the 10\%, 5\%, and 1\% levels, respectively." ///
-        "Linear regressions using diving data. Individual fixed effects are included. Standard errors clustered at the athlete level are in parentheses." ///
+        "Linear regressions using diving data. Individual fixed effects are included. Robust standard errors (in parentheses)." ///
     )
 
 
