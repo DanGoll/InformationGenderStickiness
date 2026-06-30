@@ -7,7 +7,6 @@ cd "/.../"
 import excel "data/data_experiment.xlsx", sheet("Sheet1") firstrow clear
 
 
-
 ********************************************************************************
 * Table 2: Linear regression on investment into the reference lottery
 ********************************************************************************
@@ -29,7 +28,7 @@ estimates store reg1
 
 * Column (2)
 reg invest_ref pos_info neg_info pos_info_fem neg_info_fem ///
-    female_self, vce(robust)
+    female_self
 estimates store reg2
 
 
@@ -482,7 +481,7 @@ end
 ********************************************************************************
 
 * Table B.2: Men
-
+set seed 123
 make_mediation_table, ///
     mediator(norm_rel_prob) ///
     female(0) ///
@@ -494,7 +493,7 @@ make_mediation_table, ///
 
 
 * Table B.3: Women
-
+set seed 123
 make_mediation_table, ///
     mediator(norm_rel_prob) ///
     female(1) ///
@@ -511,7 +510,7 @@ make_mediation_table, ///
 ********************************************************************************
 
 * Table B.4: Men
-
+set seed 123
 make_mediation_table, ///
     mediator(norm_rel_attract) ///
     female(0) ///
@@ -523,7 +522,7 @@ make_mediation_table, ///
 
 
 * Table B.5: Women
-
+set seed 123
 make_mediation_table, ///
     mediator(norm_rel_attract) ///
     female(1) ///

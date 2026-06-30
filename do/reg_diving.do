@@ -6,7 +6,7 @@ cd "/.../"
 use "data/diving.dta",clear
 
 
-**** Variable construction
+**** Variable construction 
 
 * Outcome variable
 g change_ref=0

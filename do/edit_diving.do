@@ -6,7 +6,7 @@ cd "/.../data/"
 import excel "Diving.xlsx", sheet("Data") firstrow allstring
 
 
-* Additional date variables: day, month, and year
+* Additional date variables: day, month and year
 split Date,p("/")
 
 rename Date1 Month

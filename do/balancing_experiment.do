@@ -222,11 +222,11 @@ if (`n_neg_m'>0 & `n_no_m'>0 & `n_neg_f'>0 & `n_no_f'>0) {
     local mde_neg_int = K * `sigma' * `se_neg_int'
 }
 
-*-----------------------------
+*----------------------------
 * Spec B: pooled trend with interaction
 * SE(beta_m) ≈ sigma / sqrt(Sxx_m),   Sxx_m = sum (x - xbar)^2 among men
 * Interaction SE(diff slopes) ≈ sigma * sqrt( 1/Sxx_m + 1/Sxx_f )
-*-----------------------------
+*----------------------------
 quietly summarize positiveness if female_self==0 & !missing(`y') & !missing(positiveness)
 local Nx_m   = r(N)
 local Varx_m = r(Var)
@@ -262,7 +262,7 @@ local mde_trend_int_s = cond(missing(`mde_trend_int'), ".", string(`mde_trend_in
 *-----------------------------
 * Write LaTeX table
 *-----------------------------
-tempname fh
+tempname fh 
 file open `fh' using "`outtex'", write replace text
 
 file write `fh' "\begin{table}[htbp]\centering" _n
